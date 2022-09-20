@@ -1,1 +1,1 @@
-"# Typescript2" 
+This project is a coding challenge from Frontend Mentor where I have to create a notifications page. I am given the starting files of html, but I have to build out the CSS and JS. I want to practice my typescript skills, so I am using typescript instead of vanilla JS. There will be no frameworks used but after building out the TS functionality, I may use a preprocessor for the CSS. For more information, there's a folder containing all of the work. Within that folder, you will find the frontend mentor readme explaining the details of the project.
