@@ -90,10 +90,19 @@ body {
     width: 100%;
 }
 
-.notification-body-container-heading {
+.notification-body-container-heading, .notification-body-container-non-heading {
     display: flex;
-    height: 120px;
+    width: 100%;
     padding: 20px;
+    justify-content: space-between;
+}
+
+.notification-body-container-heading {
+    height: 120px;
+}
+
+.notification-body-container-non-heading {
+    min-height: 120px;
 }
 
 .notification-profile-img {
@@ -117,9 +126,23 @@ body {
     width: 100%;
 }
 
-.notification-text-message {
+.notification-text-message, p.notification-private-message {
     color: var(--Dark-grayish-blue);
 }
+
+.notification-profile-non-img {
+    min-width: 120px;
+}
+
+.notification-text-container:has(p.notification-private-message) {
+    border: 1px solid var(--Light-grayish-blue-2);
+    padding: 20px;
+}
+
+.notification-body-container-non-heading {
+    min-height: 120px;
+}
+
 
 .notification-name {
     font-weight: var(--Font-Weight-Bold);
