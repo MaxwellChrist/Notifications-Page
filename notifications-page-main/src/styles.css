@@ -30,6 +30,11 @@ body {
     background-color: var(--Very-light-grayish-blue);
 }
 
+span:hover {
+    cursor: pointer;
+    color: var(--Blue);
+}
+
 /* main */
 .notification-container {
     margin: 100px auto 0;
@@ -75,6 +80,7 @@ body {
 .notification-header-read-toggle {
     font-size: 1rem;
     color: var(--Dark-grayish-blue);
+    cursor: pointer;
 }
 
 /* body */
@@ -85,9 +91,13 @@ body {
     gap: 10px;
 }
 
-.notification-body-container {
+.notification-body-container, .notification-body-not-container {
     display: flex;
     width: 100%;
+}
+
+.notification-body-container:hover {
+    background-color: var(--Very-light-grayish-blue);
 }
 
 .notification-body-container-heading, .notification-body-container-non-heading {
@@ -124,6 +134,11 @@ body {
     justify-content: center;
     gap: 10px;
     width: 100%;
+}
+
+.notification-text-container:hover {
+    background-color: var(--Very-light-grayish-blue);
+    cursor: pointer;
 }
 
 .notification-text-message, p.notification-private-message {
@@ -169,6 +184,10 @@ body {
 .active {
     background-color: var(--Very-light-grayish-blue);
     border-radius: 20px;
+}
+
+.notification-read-toggle-disable {
+    display: none;
 }
 
 @media screen and (max-width: 600px) {
