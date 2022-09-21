@@ -5,19 +5,17 @@ function markAllAsRead(): void {
     let newActiveClasses: HTMLDivElement[] = Array.from(activeClasses) as HTMLDivElement[]
     let newActiveIcons = Array.from(activeIcons) as HTMLDivElement[]
 
-    newActiveClasses.forEach((item: HTMLDivElement, index: number): void => {
-        if (item.classList.contains("active") && index <= 2) {
-            item.classList.remove("active")
-        } else if (index <= 2){
-            item.classList.add("active")
-        }
-    })
+    toggleList(newActiveClasses)
+    toggleList(newActiveIcons)
+}
 
-    newActiveIcons.forEach((item: HTMLSpanElement): void => {
-        if (item.classList.contains("notification-read-toggle-disable")) {
-            item.classList.remove("notification-read-toggle-disable")
-        } else {
-            item.classList.add("notification-read-toggle-disable")
+function toggleList(list: HTMLDivElement[]): void {
+    let classMod = (list.length > 3) ? "active" : "notification-read-toggle-disable"
+    list.forEach((item: HTMLElement, index: number): void => {
+        if (item.classList.contains(classMod)) {
+            item.classList.remove(classMod)
+        } else if (index <= 2) {
+            item.classList.add(classMod)
         }
     })
 }

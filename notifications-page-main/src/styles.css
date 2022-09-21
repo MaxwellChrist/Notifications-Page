@@ -23,7 +23,7 @@
     box-sizing: border-box;
     font-size: 16px;
     font-weight: var(--Font-Weight-Normal)
-    /* box-shadow: inset 0 0 16px -4px red; */
+        /* box-shadow: inset 0 0 16px -4px red; */
 }
 
 body {
@@ -66,10 +66,10 @@ span:hover {
     background-color: var(--Blue);
     padding: 5px 10px;
     border-radius: 25%;
-    margin: auto auto auto 10px 
+    margin: auto auto auto 10px
 }
 
-.notification-header-box h1{
+.notification-header-box h1 {
     display: inline-block;
     font-size: 1.5rem;
     color: var(--White);
@@ -91,7 +91,8 @@ span:hover {
     gap: 10px;
 }
 
-.notification-body-container, .notification-body-not-container {
+.notification-body-container,
+.notification-body-not-container {
     display: flex;
     width: 100%;
 }
@@ -100,7 +101,8 @@ span:hover {
     background-color: var(--Very-light-grayish-blue);
 }
 
-.notification-body-container-heading, .notification-body-container-non-heading {
+.notification-body-container-heading,
+.notification-body-container-non-heading {
     display: flex;
     width: 100%;
     padding: 20px;
@@ -141,7 +143,8 @@ span:hover {
     cursor: pointer;
 }
 
-.notification-text-message, p.notification-private-message {
+.notification-text-message,
+p.notification-private-message {
     color: var(--Dark-grayish-blue);
 }
 
@@ -163,7 +166,8 @@ span:hover {
     color: black;
 }
 
-.notification-post, .notification-label {
+.notification-post,
+.notification-label {
     font-weight: var(--Font-Weight-Bold);
 }
 
@@ -192,8 +196,9 @@ span:hover {
 
 @media screen and (max-width: 600px) {
     * {
-        font-size: 12px; 
+        font-size: 12px;
     }
+
     .notification-container {
         margin: 0 auto;
         padding: 0 10px;
@@ -202,7 +207,7 @@ span:hover {
     .notification-body-container-heading {
         height: 100px;
     }
-    
+
     .notification-body-container-non-heading {
         min-height: 100px;
     }
@@ -210,12 +215,12 @@ span:hover {
     .notification-profile-non-img {
         min-width: 100px;
     }
-    
+
     .notification-profile-img {
         width: 80px;
         height: 80px;
     }
-    
+
     .notification-profile-img img {
         width: 80px;
         height: 80px;

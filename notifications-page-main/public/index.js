@@ -4,20 +4,17 @@ function markAllAsRead() {
     let activeIcons = document.querySelectorAll(".notification-read-toggle");
     let newActiveClasses = Array.from(activeClasses);
     let newActiveIcons = Array.from(activeIcons);
-    newActiveClasses.forEach((item, index) => {
-        if (item.classList.contains("active") && index <= 2) {
-            item.classList.remove("active");
+    toggleList(newActiveClasses);
+    toggleList(newActiveIcons);
+}
+function toggleList(list) {
+    let classMod = (list.length > 3) ? "active" : "notification-read-toggle-disable";
+    list.forEach((item, index) => {
+        if (item.classList.contains(classMod)) {
+            item.classList.remove(classMod);
         }
         else if (index <= 2) {
-            item.classList.add("active");
-        }
-    });
-    newActiveIcons.forEach((item) => {
-        if (item.classList.contains("notification-read-toggle-disable")) {
-            item.classList.remove("notification-read-toggle-disable");
-        }
-        else {
-            item.classList.add("notification-read-toggle-disable");
+            item.classList.add(classMod);
         }
     });
 }
