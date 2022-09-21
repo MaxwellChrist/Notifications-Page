@@ -1,3 +1,5 @@
+This project is a coding challenge from Frontend Mentor where I have to create a notifications page. I am given the starting files of html, but I have to build out the CSS and JS. I want to practice my flexbox and typescript skills, so this project is focused on implementing those technologies. Because this is a pretty straightforward project, I decided not to use any frameworks either. For more information, See the information listed below provided by frontend mentor:
+
 # Frontend Mentor - Notifications page
 
 ![Design preview for the Notifications page coding challenge](./design/desktop-preview.jpg)
